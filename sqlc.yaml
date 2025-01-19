@@ -1,0 +1,11 @@
+version: "1"
+packages:
+  - name: "user"
+    path: "internal/user"
+    queries: "./modules/user/sql/queries"
+    schema: "./modules/user/sql/schema"
+    engine: "postgresql"
+    gen:
+      go: true
+      json_tags: true
+      sql_json_tags: true
